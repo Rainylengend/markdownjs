@@ -148,7 +148,7 @@ class Lexer {
         if (!match) return this.parseText(source)
         const [row, symbol, text] = match
         const token = createToken(
-            TOKEN_TYPE.Text,
+            TOKEN_TYPE.Code,
             row,
             text,
             symbol
